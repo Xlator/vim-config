@@ -1,0 +1,75 @@
+[submodule ".vim/bundle/FuzzyFinder"]
+	path = .vim/bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder
+[submodule ".vim/bundle/L9"]
+	path = .vim/bundle/L9
+	url = https://github.com/vim-scripts/L9
+[submodule ".vim/bundle/blade.vim"]
+	path = .vim/bundle/blade.vim
+	url = git://github.com/johnhamelink/blade.vim.git
+[submodule ".vim/bundle/colorizer"]
+	path = .vim/bundle/colorizer
+	url = https://github.com/lilydjwg/colorizer.git
+[submodule ".vim/bundle/dbext.vim"]
+	path = .vim/bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim
+[submodule ".vim/bundle/gist-vim"]
+	path = .vim/bundle/gist-vim
+	url = https://github.com/mattn/gist-vim
+[submodule ".vim/bundle/html5.vim"]
+	path = .vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim
+[submodule ".vim/bundle/jinja-vim"]
+	path = .vim/bundle/jinja-vim
+	url = https://github.com/youngking/jinja-vim
+[submodule ".vim/bundle/jquery.vim"]
+	path = .vim/bundle/jquery.vim
+	url = https://github.com/nono/jquery.vim
+[submodule ".vim/bundle/lusty.git"]
+	path = .vim/bundle/lusty.git
+	url = https://github.com/sjbach/lusty.git
+[submodule ".vim/bundle/php.vim"]
+	path = .vim/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim
+[submodule ".vim/bundle/scss-syntax.vim"]
+	path = .vim/bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim
+[submodule ".vim/bundle/syntastic.git"]
+	path = .vim/bundle/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
+[submodule ".vim/bundle/tlib_vim"]
+	path = .vim/bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim
+[submodule ".vim/bundle/vim-addon-mw-utils"]
+	path = .vim/bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils
+[submodule ".vim/bundle/vim-colors-solarized.git"]
+	path = .vim/bundle/vim-colors-solarized.git
+	url = git://github.com/Xlator/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-commentary.git"]
+	path = .vim/bundle/vim-commentary.git
+	url = git://github.com/tpope/vim-commentary.git
+[submodule ".vim/bundle/vim-fugitive.git"]
+	path = .vim/bundle/vim-fugitive.git
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-jade.git"]
+	path = .vim/bundle/vim-jade.git
+	url = git://github.com/digitaltoad/vim-jade.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule ".vim/bundle/vim-powerline.git"]
+	path = .vim/bundle/vim-powerline.git
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule ".vim/bundle/vim-repeat.git"]
+	path = .vim/bundle/vim-repeat.git
+	url = git://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/vim-scratch"]
+	path = .vim/bundle/vim-scratch
+	url = https://github.com/duff/vim-scratch
+[submodule ".vim/bundle/vim-snipmate"]
+	path = .vim/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate
+[submodule ".vim/bundle/vim-surround.git"]
+	path = .vim/bundle/vim-surround.git
+	url = git://github.com/tpope/vim-surround.git
