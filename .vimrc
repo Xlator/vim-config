@@ -146,3 +146,6 @@ inoremap () ()<Left>
 "Quickly add comma or semicolon at the end of the line
 inoremap ,, <End>,
 inoremap ;; <End>;
+
+"XDebug toggle breakpoint
+map <silent> <F9> :python debugger_mark()<CR>

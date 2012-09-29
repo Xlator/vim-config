@@ -76,3 +76,15 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
+[submodule ".vim/bundle/xterm-color-table.vim"]
+	path = .vim/bundle/xterm-color-table.vim
+	url = https://github.com/guns/xterm-color-table.vim
+[submodule ".vim/bundle/yankring.vim"]
+	path = .vim/bundle/yankring.vim
+	url = https://github.com/vim-scripts/YankRing.vim
+[submodule ".vim/bundle/tmux.vim"]
+	path = .vim/bundle/tmux.vim
+	url = https://github.com/zaiste/tmux.vim
+[submodule ".vim/bundle/vim-xdebug"]
+	path = .vim/bundle/vim-xdebug
+	url = https://github.com/ludovicPelle/vim-xdebug
