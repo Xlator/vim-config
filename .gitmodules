@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vim-xdebug"]
 	path = .vim/bundle/vim-xdebug
 	url = https://github.com/ludovicPelle/vim-xdebug
+[submodule ".vim/bundle/gundo.vim"]
+	path = .vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim
