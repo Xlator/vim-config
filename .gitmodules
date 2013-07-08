@@ -94,3 +94,6 @@
 [submodule ".vim/bundle/ctrlp-funky.vim"]
 	path = .vim/bundle/ctrlp-funky.vim
 	url = https://github.com/tacahiroy/ctrlp-funky
+[submodule ".vim/bundle/webapi-vim"]
+	path = .vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim
