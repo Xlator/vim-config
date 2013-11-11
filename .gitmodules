@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/L9"]
 	path = .vim/bundle/L9
 	url = https://github.com/vim-scripts/L9
-[submodule ".vim/bundle/blade.vim"]
-	path = .vim/bundle/blade.vim
-	url = git://github.com/johnhamelink/blade.vim.git
 [submodule ".vim/bundle/colorizer"]
 	path = .vim/bundle/colorizer
 	url = https://github.com/lilydjwg/colorizer.git
@@ -97,3 +94,21 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim
+[submodule ".vim/bundle/minibufexpl.vim"]
+	path = .vim/bundle/minibufexpl.vim
+	url = https://github.com/fholgado/minibufexpl.vim
+[submodule ".vim/bundle/instant-markdown.vim"]
+	path = .vim/bundle/instant-markdown.vim
+	url = https://github.com/suan/vim-instant-markdown
+[submodule ".vim/bundle/drawit.vim"]
+	path = .vim/bundle/drawit.vim
+	url = https://github.com/vim-scripts/DrawIt
+[submodule ".vim/bundle/snipmate.vim"]
+	path = .vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim
+[submodule ".vim/bundle/autotag.vim"]
+	path = .vim/bundle/autotag.vim
+	url = https://github.com/vim-scripts/AutoTag
+[submodule ".vim/bundle/abolish.vim"]
+	path = .vim/bundle/abolish.vim
+	url = https://github.com/tpope/vim-abolish
