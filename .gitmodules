@@ -103,12 +103,27 @@
 [submodule ".vim/bundle/drawit.vim"]
 	path = .vim/bundle/drawit.vim
 	url = https://github.com/vim-scripts/DrawIt
-[submodule ".vim/bundle/snipmate.vim"]
-	path = .vim/bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim
 [submodule ".vim/bundle/autotag.vim"]
 	path = .vim/bundle/autotag.vim
 	url = https://github.com/vim-scripts/AutoTag
 [submodule ".vim/bundle/abolish.vim"]
 	path = .vim/bundle/abolish.vim
 	url = https://github.com/tpope/vim-abolish
+[submodule ".vim/bundle/vim-blade"]
+	path = .vim/bundle/vim-blade
+	url = https://github.com/xsbeats/vim-blade
+[submodule ".vim/bundle/dash.vim"]
+	path = .vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim
+[submodule ".vim/bundle/funcoo.vim"]
+	path = .vim/bundle/funcoo.vim
+	url = https://github.com/rizzatti/funcoo.vim
+[submodule ".vim/bundle/supertab.vim"]
+	path = .vim/bundle/supertab.vim
+	url = https://github.com/ervandew/supertab
+[submodule ".vim/bundle/vim-over"]
+	path = .vim/bundle/vim-over
+	url = https://github.com/osyo-manga/vim-over
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets
