@@ -127,3 +127,6 @@
 [submodule ".vim/bundle/vim-snippets"]
 	path = .vim/bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets
+[submodule ".vim/bundle/tagbar.vim"]
+	path = .vim/bundle/tagbar.vim
+	url = https://github.com/majutsushi/tagbar
