@@ -1,0 +1,55 @@
+" vimscripts
+Bundle "FuzzyFinder"
+Bundle "L9"
+Bundle "dbext.vim"
+Bundle "YankRing.vim"
+Bundle "AutoTag"
+
+" tpope
+Bundle "tpope/vim-commentary.git"
+Bundle "tpope/vim-fugitive.git"
+Bundle "tpope/vim-markdown"
+Bundle "tpope/vim-repeat.git"
+Bundle "tpope/vim-surround.git"
+Bundle "tpope/vim-abolish"
+
+" syntax stuff
+Bundle "scrooloose/syntastic.git"
+Bundle "StanAngeloff/php.vim"
+Bundle "othree/html5.vim"
+Bundle "youngking/jinja-vim"
+Bundle "cakebaker/scss-syntax.vim"
+Bundle "digitaltoad/vim-jade.git"
+Bundle "zaiste/tmux.vim"
+Bundle "lilydjwg/colorizer.git"
+Bundle "Raimondi/delimitMate"
+Bundle "mattn/emmet-vim"
+Bundle "xsbeats/vim-blade"
+
+" libs
+Bundle "tomtom/tlib_vim"
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "mattn/webapi-vim"
+Bundle "rizzatti/funcoo.vim"
+
+" utils
+Bundle "duff/vim-scratch"
+Bundle "garbas/vim-snipmate"
+Bundle "kien/ctrlp.vim"
+Bundle "tacahiroy/ctrlp-funky"
+Bundle "tacahiroy/ctrlp-ssh"
+Bundle "ludovicPelle/vim-xdebug"
+Bundle "sjl/gundo.vim"
+Bundle "zeekay/vim-instant-markdown"
+Bundle "Valloric/YouCompleteMe"
+Bundle "majutsushi/tagbar"
+Bundle "osyo-manga/vim-over"
+
+" misc
+Bundle "mattn/gist-vim"
+Bundle "guns/xterm-color-table.vim"
+Bundle "suan/vim-instant-markdown"
+Bundle "rizzatti/dash.vim"
+Bundle "honza/vim-snippets"
+
+" vim: ft=vim

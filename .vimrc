@@ -1,7 +1,9 @@
-set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Viktor Jackson / viktor@vxj.se / github.com/Xlator
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Powerline
+set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
 
 """" Basic """"
 
@@ -12,8 +14,8 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     set shell=/bin/zsh
 
     "Pathogen
-    call pathogen#helptags()
-    call pathogen#runtime_append_all_bundles()
+    " call pathogen#helptags()
+    " call pathogen#runtime_append_all_bundles()
 
     "Detect filetype
     filetype plugin on
@@ -46,6 +48,11 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     set synmaxcol=300
 
     set noshowmode
+
+"""" Vundle  """"
+
+Bundle "gmarik/vundle"
+include "bundles"
 
 """" Rendering """"
 
