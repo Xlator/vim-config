@@ -1,3 +1,4 @@
+set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Viktor Jackson / viktor@vxj.se / github.com/Xlator
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -43,6 +44,8 @@
 
     " Don't try to highlight lines longer than 300 characters.
     set synmaxcol=300
+
+    set noshowmode
 
 """" Rendering """"
 
@@ -171,6 +174,8 @@
     nmap ,r :e app/routes.php<cr>
     nmap ,c :e composer.json<cr>
     nmap ,C :!codecept run<cr>
+    nmap ,b :e bower.json<cr>
+    
 
 """" General editing """"
 
@@ -252,6 +257,7 @@
 
 """" Plugins """"
 
+    
     "CSS colour highlighting
     autocmd FileType css,scss :ColorHighlight
 
@@ -281,6 +287,22 @@
     nnoremap <Leader>u :GundoToggle<CR>
     let g:gundo_preview_bottom = 1
 
+    " Emmet
+    let g:user_emmet_settings = { 'php': { 'extends': 'html' }, 'blade': { 'extends': 'html' } }
+    let g:user_emmet_leader_key = '\\'
+
+    " YouCompleteMe
+    let g:ycm_collect_identifiers_from_tags_files = 1
+    let g:ycm_filetype_specific_completion_to_disable = {'php':''}
+
+    " DelimitMate
+    let delimitMate_balance_matchpairs = 1
+    let delimitMate_expand_cr = 1
+
+    imap <expr> <CR> pumvisible()
+                     \ ? "\<C-Y>"
+                     \ : "<Plug>delimitMateCR"
+
 """" Misc. bindings """"
 
     "Toggle foldcolumn
@@ -296,7 +318,7 @@
     noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
     " Quick buffer for notes
-    map <leader>q :Sscratch
+    map <leader>q :Sscratch<cr>
 
     " :W to force save
     command! W w !sudo tee % > /dev/null

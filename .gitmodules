@@ -130,3 +130,12 @@
 [submodule ".vim/bundle/tagbar.vim"]
 	path = .vim/bundle/tagbar.vim
 	url = https://github.com/majutsushi/tagbar
+[submodule ".vim/bundle/emmet.vim"]
+	path = .vim/bundle/emmet.vim
+	url = https://github.com/mattn/emmet-vim
+[submodule ".vim/bundle/youcompleteme.vim"]
+	path = .vim/bundle/youcompleteme.vim
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule ".vim/bundle/delimitMate.vim"]
+	path = .vim/bundle/delimitMate.vim
+	url = https://github.com/Raimondi/delimitMate
