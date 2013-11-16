@@ -54,7 +54,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle "gmarik/vundle"
-source .vim/include/bundles
+source ~/.vim/include/bundles
 
 """" Rendering """"
 
@@ -282,6 +282,8 @@ source .vim/include/bundles
     "Ctrl-P - Fuzzy finder in pure VimScript
     let g:ctrlp_map = '<Leader>t' "Use Command-T binding...
     let g:ctrlp_match_window_reversed = 0
+    let g:ctrlp_extensions = ['funky']
+    let g:ctrlp_ssh_server_list_file = $HOME . '/.ssh/known_hosts'
 
     "Use Ctrl-P Funky for function search
     nnoremap <Leader>fu :CtrlPFunky<Cr>
