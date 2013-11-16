@@ -4,7 +4,7 @@ Session.vim
 .netrwhist
 *~
 .vim/include
-~.vim/include/bundles
-.vim/bundle
-~.vim/bundle/vundle
+!.vim/include/bundles
+.vim/bundle/
+!.vim/bundle/vundle/
 
