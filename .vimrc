@@ -50,9 +50,11 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     set noshowmode
 
 """" Vundle  """"
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
 Bundle "gmarik/vundle"
-include "bundles"
+source .vim/include/bundles
 
 """" Rendering """"
 

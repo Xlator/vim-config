@@ -5,6 +5,9 @@ Bundle "dbext.vim"
 Bundle "YankRing.vim"
 Bundle "AutoTag"
 
+" colour schemes
+Bundle "altercation/solarized"
+
 " tpope
 Bundle "tpope/vim-commentary.git"
 Bundle "tpope/vim-fugitive.git"
