@@ -10,6 +10,9 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     " The golden rule
     set nocompatible
 
+    " disable Ex mode
+    nnoremap Q <nop>
+
     "Shell
     set shell=/bin/zsh
 
@@ -59,6 +62,7 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     " Include my bundle manifest
     source ~/.vim/include/bundles
 
+
 """" Rendering """"
 
     set number
@@ -86,6 +90,7 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     set expandtab
     set shiftwidth=4
     set listchars=tab:▸\ ,eol:¬,trail:•
+    set showbreak=↪
 
     " Highlight column 81
     highlight ColorColumn ctermbg=magenta
@@ -253,6 +258,12 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     augroup myvimrchooks
         au!
         autocmd bufwritepost $MYVIMRC source $MYVIMRC
+    augroup END
+
+    "Auto-reload bundles manifest on change
+    augroup mybundlehooks
+        au!
+        autocmd bufwritepost ~/.vim/include/bundles source $MYVIMRC
     augroup END
 
     " Return to last edit position when opening files (You want this!)

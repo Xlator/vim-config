@@ -46,6 +46,7 @@ Bundle "zeekay/vim-instant-markdown"
 Bundle "Valloric/YouCompleteMe"
 Bundle "majutsushi/tagbar"
 Bundle "osyo-manga/vim-over"
+Bundle "Lokaltog/vim-easymotion"
 
 " misc
 Bundle "mattn/gist-vim"
