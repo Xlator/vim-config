@@ -68,11 +68,11 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     syntax on
 
     " solarized options 
-    colorscheme solarized
     let g:solarized_termcolors = 256
     let g:solarized_visibility = "high"
     let g:solarized_contrast = "high"
     let g:solarized_termtrans = 1
+    colorscheme solarized
     
     set modeline
     set modelines=1
