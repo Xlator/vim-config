@@ -6,7 +6,7 @@ Bundle "YankRing.vim"
 Bundle "AutoTag"
 
 " colour schemes
-Bundle "altercation/solarized"
+Bundle "altercation/vim-colors-solarized"
 
 " tpope
 Bundle "tpope/vim-commentary.git"
