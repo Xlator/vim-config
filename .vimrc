@@ -50,11 +50,14 @@ set rtp+=/Users/xlator/.local/share/powerline/powerline/bindings/vim
     set noshowmode
 
 """" Vundle  """"
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-Bundle "gmarik/vundle"
-source ~/.vim/include/bundles
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
+
+    Bundle "gmarik/vundle"
+
+    " Include my bundle manifest
+    source ~/.vim/include/bundles
 
 """" Rendering """"
 
@@ -63,13 +66,14 @@ source ~/.vim/include/bundles
     set foldmethod=syntax
     set background=dark
     syntax on
+
     " solarized options 
+    colorscheme solarized
     let g:solarized_termcolors = 256
     let g:solarized_visibility = "high"
     let g:solarized_contrast = "high"
     let g:solarized_termtrans = 1
-    colorscheme solarized
-
+    
     set modeline
     set modelines=1
 
@@ -83,18 +87,23 @@ source ~/.vim/include/bundles
     set shiftwidth=4
     set listchars=tab:▸\ ,eol:¬,trail:•
 
+    " Highlight column 81
+    highlight ColorColumn ctermbg=magenta
+    call matchadd('ColorColumn', '\%81v', 100)
+
 """" Searching/highlighting """"
 
     "Highlight current line
     set cul
+    highlight CursorLine ctermbg=233
 
     "Highlight search
     set hlsearch
 
-    "Toggle search highlighting, invisibles and spell checking using <CR>
+    "Toggle search highlighting, invisibles and spell checking
     nnoremap <Leader><CR> :noh<CR>:set list!<CR>:set spell!<CR>
 
-    "Case insensitive search
+    "Smart case search
     set ignorecase
     set smartcase
 
@@ -162,7 +171,7 @@ source ~/.vim/include/bundles
     autocmd FileType php noremap <Leader>M :w!<CR>:!/usr/bin/php %<CR>
     autocmd FileType php noremap <Leader>L :w!<CR>:!/usr/bin/php -l %<CR>
 
-    " PHP settings
+    " PHP syntax settings
     let php_special_vars = 0
     let php_special_functions = 0
     let php_folding = 2
@@ -198,14 +207,14 @@ source ~/.vim/include/bundles
     " Remap VIM 0 to first non-blank character
     map 0 ^
 
-    "Set cursor inside braces/quotes
-    inoremap '' ''<Left>
-    inoremap "" ""<Left>
-    inoremap () ()<Left>
-    inoremap <> <><Left>
-    inoremap {} {}<Left>
-    inoremap [] []<Left>
-    inoremap () ()<Left>
+    "Set cursor inside braces/quotes (delimitMate replaces this)
+    " inoremap '' ''<Left>
+    " inoremap "" ""<Left>
+    " inoremap () ()<Left>
+    " inoremap <> <><Left>
+    " inoremap {} {}<Left>
+    " inoremap [] []<Left>
+    " inoremap () ()<Left>
 
     "Quickly add comma or semicolon at the end of the line
     inoremap ,, <End>,
@@ -243,7 +252,7 @@ source ~/.vim/include/bundles
     "Auto-reload .vimrc on change
     augroup myvimrchooks
         au!
-        autocmd bufwritepost .vimrc source ~/.vimrc
+        autocmd bufwritepost $MYVIMRC source $MYVIMRC
     augroup END
 
     " Return to last edit position when opening files (You want this!)
@@ -266,9 +275,8 @@ source ~/.vim/include/bundles
 
 """" Plugins """"
 
-    
     "CSS colour highlighting
-    autocmd FileType css,scss :ColorHighlight
+    autocmd FileType css,scss,sass,less,html,blade :ColorHighlight
 
     "Syntastic
     let g:syntastic_error_symbol='x'
@@ -306,6 +314,17 @@ source ~/.vim/include/bundles
     let g:ycm_collect_identifiers_from_tags_files = 1
     let g:ycm_filetype_specific_completion_to_disable = {'php':''}
 
+    let g:ycm_filetype_blacklist = {
+          \ 'tagbar' : 1,
+          \ 'qf' : 1,
+          \ 'notes' : 1,
+          \ 'markdown' : 1,
+          \ 'unite' : 1,
+          \ 'text' : 1,
+          \ 'vimwiki' : 1,
+          \ 'vim' : '1'
+    \}
+
     " DelimitMate
     let delimitMate_balance_matchpairs = 1
     let delimitMate_expand_cr = 1
@@ -322,9 +341,6 @@ source ~/.vim/include/bundles
     "Toggle pastemode
     map <F3> :set invpaste<CR>
 
-    "Turn off indentation
-    nnoremap <F8> :setl noai nocin nosi inde=<CR>
-
     " Remove the Windows ^M - when the encodings gets messed up
     noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
@@ -336,7 +352,6 @@ source ~/.vim/include/bundles
 
     "Toggle folds with spacebar
     nnoremap <space> za
-    nnoremap <Leader><space> zi
 
     "Edit vimrc
     nnoremap <leader>ev <C-w><C-v>:e $MYVIMRC<CR>
@@ -348,6 +363,11 @@ source ~/.vim/include/bundles
 
     " Search dash
     nmap <silent> <Leader>d <Plug>DashSearch
+
+    let g:dash_map = {
+    \ 'blade' : 'laravel',
+    \ 'php'   : 'laravel php'
+    \}
 
 """" Helper functions """"
 
